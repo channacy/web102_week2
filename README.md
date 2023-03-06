@@ -36,7 +36,7 @@ Here's a walkthrough of implemented required features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ...  GIPHY Capture
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,6 +45,8 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+The two challenges I faced was making the question show on one side of the card and the answer showing on the other side when the user clicks on the card. Another challenge was changing the background color of the card React component based on the given difficulty level of the question on the flashcard. I referred to outside resources online to help me resolve these challenges and conflicts. 
 
 ## License
 
