@@ -1,14 +1,15 @@
 import './App.css';
 import Card from './components/Card';
 import { useState } from 'react';
-//import flashcards from './flashcards.js';
+
 const flashcards = [
   {
       question: "What type of data structure is best for implementing an undo feature?",
       answer: "Stack",
-      type: "Easy",
+      type: "Medium",
       answerImg: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221219100314/stack.drawio2.png",
       questionImg: "https://thumbs.dreamstime.com/b/data-structure-icon-line-style-element-organization-collection-thin-templates-infographics-simple-filled-more-203775477.jpg"
+      
   },
   {
       question: "What type of data structure is best for representing a file system?",
@@ -17,16 +18,13 @@ const flashcards = [
       answerImg: "https://cdn.programiz.com/sites/tutorial2program/files/tree_0.png",
       questionImg: "https://thumbs.dreamstime.com/b/data-structure-icon-line-style-element-organization-collection-thin-templates-infographics-simple-filled-more-203775477.jpg"
 
-
   },
   {
     question: "What method places an item on top of a stack?",
     answer: "Push",
-    type: "Easy",
+    type: "Hard",
     answerImg: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221219100314/stack.drawio2.png",
     questionImg: "https://thumbs.dreamstime.com/b/data-structure-icon-line-style-element-organization-collection-thin-templates-infographics-simple-filled-more-203775477.jpg"
-
-
   },
  
 ];
@@ -54,7 +52,7 @@ const App = () => {
         <p>Count: {count} / {flashcards.length}</p>
       </div>
       <div className='container'>
-        <Card answer={flashcards[count - 1].answer} question={flashcards[count - 1].question} questionImg={flashcards[count - 1].questionImg} answerImg={flashcards[count - 1].answerImg}/>
+        <Card answer={flashcards[count - 1].answer} question={flashcards[count - 1].question} questionImg={flashcards[count - 1].questionImg} answerImg={flashcards[count - 1].answerImg} difficulty={flashcards[count-1].type}/>
       </div>
       <div className='footer'>
         <button onClick={setBackCard}>BACK</button>
