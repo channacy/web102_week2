@@ -2,7 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  display: flex;
+  
 }
 
 .logo {
@@ -32,8 +33,6 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
-
 
 .read-the-docs {
   color: #888;

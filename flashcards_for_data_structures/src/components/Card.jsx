@@ -10,6 +10,7 @@ const Card = (props) => {
         <div className="card" onClick={flipCard}>
             <div className="cardFront">
                 {showAnswer? <p>{props.answer}</p>: <p>{props.question}</p>}
+                {showAnswer? <img src={props.answerImg}/> : <img src={props.questionImg}/>}
             </div>
         </div>
        

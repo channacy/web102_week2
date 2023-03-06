@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Cute Font', cursive;
   line-height: 1.5;
   font-weight: 400;
 
@@ -26,30 +26,34 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
   color: black;
+  font-size: 56px;
+  text-align: center;
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  border: 3px solid black;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
+  color: black;
   cursor: pointer;
   transition: border-color 0.25s;
+  padding: 15px;
+  width: 100%;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: pink;
+  color: black;
+  box-shadow: 5px 10px;
 }
 button:focus,
 button:focus-visible {
@@ -66,16 +70,59 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+
   }
 }
   
-.card{
-  background-color: gainsboro;
-}
-.card p{
-  color: black;
-}
-
 p{
   color: black;
+  font-size: 16px;
 }
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 100%;
+  height: 500px;
+  box-shadow: 5px 10px;
+  padding: 15px;
+}
+
+.card p{
+  color: black;
+  font-size: 24px;
+
+}
+.card img{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.header p{
+  align-self: flex-end;
+  font-size: 32px;
+  align-content: space-between;
+  background-color: white;
+  border-radius: 10%;
+ 
+}
+#count{
+  color: pink;
+
+}
+.footer{
+  display: flex;
+  padding: 4px;
+
+}
+.footer button{
+  margin-left: 4px;
+}
+
